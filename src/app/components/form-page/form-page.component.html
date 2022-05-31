@@ -10,10 +10,9 @@
         <p>From</p>
         <div class="select-box">
           <select formControlName="fromCurrency">
-            <option value="USD">USD</option>
-            <option value="UAH">UAH</option>
-            <option value="EUR">EUR</option>
-            <option value="GBP">GBP</option>
+            <option *ngFor="let country of countries" value="{{ country }}">
+              {{ country }}
+            </option>
           </select>
         </div>
       </div>
@@ -26,10 +25,9 @@
         <p>To</p>
         <div class="select-box">
           <select formControlName="toCurrency">
-            <option value="USD">USD</option>
-            <option value="UAH">UAH</option>
-            <option value="EUR">EUR</option>
-            <option value="GBP">GBP</option>
+            <option *ngFor="let country of countries" value="{{ country }}">
+              {{ country }}
+            </option>
           </select>
         </div>
       </div>

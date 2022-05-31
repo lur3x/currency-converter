@@ -5,10 +5,18 @@
   left: 0;
   top: 0;
   background-color: #abebc6;
-  padding: 1%;
-  text-align: center;
+  padding: .7rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.header div {
+.header-info {
   font-size: 20px;
+  width: fit-content;
+  border: 1px solid #000;
+  margin: 0 auto;
+  padding: 1%;
+  color: #fff;
+  background-color: #1d8348;
+}
+.header-info p span {
+  font-size: larger;
 }

@@ -11,6 +11,7 @@ export class FormPageComponent implements OnInit {
   form!: FormGroup;
   result!: any;
   total!: string;
+  countries = ['UAH', 'USD', 'EUR', 'GBP'];
 
   constructor(private currency: CurrencyService) {}
 
