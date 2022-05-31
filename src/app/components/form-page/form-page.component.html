@@ -1,0 +1,40 @@
+<div class="wrapper">
+  <header>Currency Converter</header>
+  <form [formGroup]="form" (submit)="submit()">
+    <div class="amount">
+      <p>Enter Amount</p>
+      <input type="text" value="1" formControlName="amount" />
+    </div>
+    <div class="drop-list">
+      <div class="from">
+        <p>From</p>
+        <div class="select-box">
+          <select formControlName="fromCurrency">
+            <option value="USD">USD</option>
+            <option value="UAH">UAH</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+          </select>
+        </div>
+      </div>
+      <div class="icon">
+        <button class="switch-btn" (click)="switch()" type="button">
+          <img src="../../../assets/swap.png" alt="Switch" />
+        </button>
+      </div>
+      <div class="to">
+        <p>To</p>
+        <div class="select-box">
+          <select formControlName="toCurrency">
+            <option value="USD">USD</option>
+            <option value="UAH">UAH</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="exchange-rate">{{ total }}</div>
+    <button class="submit-btn" type="submit">Get Exchange Rate</button>
+  </form>
+</div>
